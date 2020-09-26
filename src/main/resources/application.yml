@@ -1,0 +1,24 @@
+spring:
+  data:
+    mongodb:
+      host: ${MONGOURL}
+      port: 27017
+      database: juniatime-new
+  jackson:
+    date-format:  yyyy-MM-dd HH:mm:ss  
+    
+junia:
+  mongo:
+    db: juniatime-new
+    host: ${MONGOURL}
+    port: 27017
+  check:
+    interval: 60000
+  webhook:
+    url: ${WEBHOOK}
+    channel-name: JUNIATIME
+    component-name: JUNIATIME
+  type-message: local
+  url-account: ${URL_ACCOUNT}
+server:
+  port: 8880
